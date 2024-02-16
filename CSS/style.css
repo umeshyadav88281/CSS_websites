@@ -1,0 +1,179 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variable */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar  Logo and image */
+#logo {
+    margin-right: auto;
+}
+
+#logo img {
+    height: 150px;
+    padding: 10px 5px;
+    margin: 12px;
+    }
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar List and styling */
+#navbar ul {
+    display: flex;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+
+#navbar ul li a {
+    color: white;
+    padding: 10px 60px;
+    border-radius: 22px;
+    text-decoration: none;
+    font-size: 30px; /* Adjust the font size as needed */
+}
+
+
+ 
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-align: center;
+    color: white;
+}
+ 
+#home p{
+font-size: 2.5rem;
+}
+ 
+
+#home::before {
+    content: "";
+    /* background: url("/Img/bg1.jpg") no-repeat center center/cover; */
+    background-color: cadetblue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 300%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.84;
+}
+
+/* About Song Section */
+#about-song {
+    padding: 50px;
+    text-align: center;
+    /* background-color: #f0f0f0; */
+}
+
+#about-song h2 {
+    margin-bottom: 20px;
+}
+
+#about-song p {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 40px;
+}
+
+/* About Artist Section */
+#about-artist {
+    padding: 50px;
+    text-align: center;
+}
+
+#about-artist h2 {
+    margin-bottom: 20px;
+}
+
+#about-artist p {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 40px;
+}
+
+/* Footer */
+/* footer {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+} */
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+
+}
+
+
+
+/* Utility Class */
+.h-primary {
+    font-size: 5.5rem;
+color: brown;    
+}
+
+
+ 
+
+.p-primary {
+     
+    font-size: 2rem;
+font-family: cursive;
+font-family: "Baloo Bhaijaan 2", sans-serif;
+
+}
+
+.center {
+    text-align: center;
+}
+
+
